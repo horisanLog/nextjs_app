@@ -8,10 +8,11 @@ export default function Layput({ children, title = "HP by Nextjs"}) {
         <title>{title}</title>
       </Head>
       <header>
-        <nav className='bg-gray-800 w-screen'>
-
-        </nav>
+        <nav className='bg-gray-800 w-screen'></nav>
       </header>
+      <main className="flex flex-1 justify-center items-center flex-col w-screen">
+        {children}
+      </main>
     </div>
   );
 }
